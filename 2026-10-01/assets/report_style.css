@@ -160,3 +160,9 @@ th { background:#f1f5f9; }
   a { color:inherit; text-decoration:none; }
   .tt { display:none; }
 }
+
+/* Ordered icons remain fully visible, including four-part 30th labels. */
+.decktype-cell { white-space:normal; min-width:0; flex-wrap:wrap; }
+.decktype-icons { display:inline-flex; align-items:center; flex:0 0 auto; gap:0; white-space:nowrap; }
+.decktype-icons .decktype-icon { position:static; width:28px; height:28px; flex:0 0 28px; }
+@media(max-width:768px) { .decktype-icons .decktype-icon { width:24px; height:24px; flex:0 0 24px; } }
