@@ -3,13 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ポケカ シティリーグ週次レポート</title>
-  <style>body{font-family:system-ui,sans-serif;line-height:1.7;max-width:760px;margin:40px auto;padding:0 20px;color:#1f2937}a{color:#1d4ed8}</style>
+  <meta name="description" content="ポケモンカードゲームのシティリーグ公開結果をまとめたレポートの入口です。">
+  <title>シティリーグ レポート | ポケカ</title>
+  <style>
+    :root { color-scheme: light; --ink: #0f172a; --sub: #475569; --line: #dbe3ef; --blue: #0369a1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f8fafc; color: var(--ink); font-family: "Yu Gothic UI", Meiryo, sans-serif; line-height: 1.75; }
+    main { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { padding: 36px 32px; border-radius: 18px; background: linear-gradient(135deg, #0f172a, #0ea5e9); color: #fff; }
+    h1 { margin: 0 0 12px; font-size: clamp(1.7rem, 5vw, 2.5rem); line-height: 1.35; }
+    header p { margin: 0; }
+    section { margin-top: 24px; padding: 26px 30px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+    h2 { margin: 0 0 12px; font-size: 1.3rem; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--blue); }
+    a:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+    .report-link { display: inline-block; margin: 8px 0 12px; padding: 10px 18px; border-radius: 8px; background: #075985; color: #fff; font-weight: 700; text-decoration: none; }
+    .report-link:hover { background: #0c4a6e; }
+    .muted { color: var(--sub); }
+    @media (max-width: 600px) { main { padding: 16px 12px 40px; } header, section { padding: 22px 18px; } }
+  </style>
 </head>
 <body>
-  <h1>ポケカ シティリーグ週次レポート</h1>
-  <p><a href="rehearsal/2026-02-12/weekly_facts_report.html">過去データ試運転（2026-02-12終了分）</a></p>
-  <p>過去データを用いた試運転版です。対象期間：2026年2月6日〜12日。2027シーズンの大会結果ではありません。</p>
-  <p>構築プロファイルの「未確認」欄には、今後、人が評価を記入します。<strong>?</strong>ボタンから記入の観点を確認できます。</p>
+  <main>
+    <header>
+      <h1>ポケカ シティリーグ レポート</h1>
+      <p>公式に公開された大会結果から、入賞デッキの構成と公開リストを確認できるレポートです。</p>
+    </header>
+
+    <section aria-labelledby="report-heading">
+      <h2 id="report-heading">公開中のレポート</h2>
+      <p><strong>2026年10月1日終了分</strong>：対象期間は2026年9月26日〜10月1日（6日間）です。</p>
+      <a class="report-link" href="2026-10-01/weekly_facts_report.html">レポートを読む</a>
+      <p class="muted">このレポートに比較期間はありません。公開入賞一覧や構築プロファイルには、レポート内のリンクから進めます。</p>
+    </section>
+
+    <section aria-labelledby="guide-heading">
+      <h2 id="guide-heading">数字と評価の見方</h2>
+      <p>入賞シェアは、対象期間に公開された入賞枠の内訳です。デッキの使用率や実際の対戦勝率を示す数字ではありません。</p>
+      <p>デッキタイプは暫定判定で、人の評価が「未確認」の項目はレビュー・承認前です。対面推定のページは参考値であり、実際の個別対戦結果を示すものではありません。</p>
+    </section>
+  </main>
 </body>
 </html>
